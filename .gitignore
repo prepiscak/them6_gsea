@@ -1,3 +1,6 @@
+results_dir/*.xlsx
+results_dir/*.tiff
+
 # History files
 .Rhistory
 .Rapp.history
