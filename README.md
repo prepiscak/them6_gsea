@@ -43,7 +43,15 @@ bash dockRstudio_v4.0.3_run.sh
 
 2. Go to `localhost:7666` in your browser (Chrome, Firefox). This will open Rstudio server login page where default `Username: rstudio` and `Password: them6`
 3. Open project file `workspace.Rproj` and once loaded open `them6_gsea.Rmd` file. 
-4. Use the `"Knit"` button to generate results and render the report and/or explore/run individual code chunks.
+4. Run the `analysis_parameters` chunk to restore the R dependencies.
+5. Use the `"Knit"` button to generate results and render the report and/or explore/run individual code chunks. 
+
+:warning: `analysis_parameters` chunk (see point 4. above) needs to be run first otherwise you will get:
+``` R
+"Packages...not installed" 
+or when using "Knit" button:
+"Rendering R Markdown...requires...the following packages:..."
+```
 
 ### Preferred - automatic 
 
